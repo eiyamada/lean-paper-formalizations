@@ -1,0 +1,35 @@
+import ClassificationSigmaValidity.Syntax
+import ClassificationSigmaValidity.Semantics
+import ClassificationSigmaValidity.DynamicLanguages
+import ClassificationSigmaValidity.FiniteDynamics
+import ClassificationSigmaValidity.Reduction
+import ClassificationSigmaValidity.Expressivity
+import ClassificationSigmaValidity.Frames
+import ClassificationSigmaValidity.Diagonal
+import ClassificationSigmaValidity.Locality
+import ClassificationSigmaValidity.Patterns
+import ClassificationSigmaValidity.FrameClass
+import ClassificationSigmaValidity.PatternLemmas
+import ClassificationSigmaValidity.Collapse
+import ClassificationSigmaValidity.SingleAgentKD45
+import ClassificationSigmaValidity.TypeFormulas
+import ClassificationSigmaValidity.FiniteModelProperty
+import ClassificationSigmaValidity.NonexistenceK45S5
+import ClassificationSigmaValidity.TypeDynamics
+import ClassificationSigmaValidity.Examples
+import ClassificationSigmaValidity.ExistenceS5Zero
+import ClassificationSigmaValidity.ExistenceZeroOne
+import ClassificationSigmaValidity.ExistenceKD45Zero
+import ClassificationSigmaValidity.EquivalenceClasses
+import ClassificationSigmaValidity.ClassificationDisjointness
+import ClassificationSigmaValidity.WellDefinedness
+import ClassificationSigmaValidity.AgentSupport
+import ClassificationSigmaValidity.Unravelling
+import ClassificationSigmaValidity.Classification
+
+/-!
+# Classification of sigma-validity in iterated announcements
+
+This is the root module of the Lean 4 formalization accompanying
+"Classification of sigma-validity in iterated announcements".
+-/
