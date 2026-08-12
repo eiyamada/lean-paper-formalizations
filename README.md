@@ -1,7 +1,7 @@
 # Classification of sigma-validity — Lean 4 formalization
 
 This repository contains a Lean 4 formalization accompanying the paper
-*Classification of sigma-validity in iterated announcements* (<https://arxiv.org/abs/2607.04685>) It covers the
+*Classification of sigma-validity in iterated announcements* (<https://arxiv.org/abs/2607.04685>). It covers the
 modal, PAL, and BPAL definitions; believed public announcements; finite and
 infinite truth patterns; the collapse, existence, and nonexistence lemmas; and
 the K45, single-agent KD45, multi-agent KD45, and S5 classification results.
