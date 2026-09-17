@@ -1,55 +1,40 @@
-# Classification of sigma-validity — Lean 4 formalization
+# Lean formalizations of Eiji Yamada's papers
 
-This repository contains a Lean 4 formalization accompanying the paper
-*Classification of sigma-validity in iterated announcements* (<https://arxiv.org/abs/2607.04685>). It covers the
-modal, PAL, and BPAL definitions; believed public announcements; finite and
-infinite truth patterns; the collapse, existence, and nonexistence lemmas; and
-the K45, single-agent KD45, multi-agent KD45, and S5 classification results.
+This repository collects Lean 4 formalizations accompanying multiple research
+papers. Each paper has a root Lean module, a directory of supporting modules,
+and a coverage map connecting the manuscript to Lean declarations.
 
-The root module is `ClassificationSigmaValidity.lean`. A detailed
-paper-to-Lean theorem map is in `COVERAGE.md`.
+| Paper | Lean entry point | Coverage map | Publication status |
+| --- | --- | --- | --- |
+| [*Classification of sigma-validity in iterated announcements*](https://arxiv.org/abs/2607.04685) | [`ClassificationSigmaValidity.lean`](ClassificationSigmaValidity.lean) | [`ClassificationSigmaValidity/COVERAGE.md`](ClassificationSigmaValidity/COVERAGE.md) | arXiv preprint |
+| *The Sources of Unknowability and Self-refutation in Epistemic and Dynamic Epistemic Logic* | [`SourcesOfUnknowability.lean`](SourcesOfUnknowability.lean) | [`SourcesOfUnknowability/COVERAGE.md`](SourcesOfUnknowability/COVERAGE.md) | Accepted at the 8th Asian Workshop for Philosophical Logic (AWPL 2026); not yet accepted for the proceedings. An arXiv posting is planned. |
 
 ## Build
 
-The project is pinned to Lean 4.22.0 and mathlib 4.22.0.
+The Lake project is pinned to Lean 4.22.0 and mathlib 4.22.0. From the
+repository root, run:
 
 ```text
 lake exe cache get
 lake build
 ```
 
-For the strict check used while preparing this repository:
+`lake build` checks both paper libraries. To build one paper separately, use
+`lake build ClassificationSigmaValidity` or
+`lake build SourcesOfUnknowability`.
 
-```text
-lake --old --wfail build
-```
+On Windows, use a short checkout path if Lake or a dependency fails while
+creating files under `.lake` because of the path length.
 
-All paper-specific proofs are theorem proofs checked by Lean's kernel; the
-development contains no `sorry`, `admit`, or project-specific axioms.
+## Reading the formalizations
 
-## Organization
+Start with a paper's root module and its coverage map. The coverage maps list
+the corresponding definitions, intermediate results, and main results, and
+record any explicit assumptions or departures from the manuscript. The Lean
+source is the authoritative statement of each formalized claim.
 
-- `Syntax`, `Semantics`, `DynamicLanguages`, and `Expressivity` define the
-  three languages, their semantics, and the announcement-elimination
-  translations proving their equal expressive power.
-- `Frames`, `Locality`, `Reduction`, `FiniteDynamics`, and
-  `FiniteModelProperty` provide the semantic infrastructure used by the paper.
-- `Collapse`, `NonexistenceK45S5`, and `Unravelling` prove the collapse and
-  nonexistence results.
-- `TypeFormulas`, `TypeDynamics`, `ExistenceZeroOne`, `ExistenceKD45Zero`,
-  `ExistenceS5Zero`, and `Examples` construct the witness families.
-- `EquivalenceClasses`, `WellDefinedness`, `ClassificationDisjointness`, and
-  `Classification` assemble the final classification.
-
-## Source note
-
-Hypotheses used implicitly in the paper are made explicit in theorem
-signatures, notably the two distinct agents needed by the KD45 finite-zero
-witnesses. The finite-depth unravelling first works over the finite support of
-the announcement formula and is then transferred back to an arbitrary
-inhabited ambient type of agents.
-
-The cited background statement that the basic modal, PAL, and BPAL languages
-have equal expressive power is proved in `Expressivity.lean`, including
-arbitrarily nested announcements and correctness relative to intermediate PAL
-domains and BPAL accessibility relations.
+The sigma-validity development includes the modal, PAL, and BPAL languages,
+announcement dynamics, witness constructions, and K45, KD45, and S5
+classification results. The unknowability development covers single-agent and
+multi-agent epistemic logic, its dynamic notions, and the Brandenburger–Keisler
+paradox; its coverage map specifies the exact formalized scope.

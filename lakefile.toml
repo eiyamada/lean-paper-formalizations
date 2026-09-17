@@ -1,6 +1,6 @@
 name = "leanPaperFormalizations"
 version = "0.1.0"
-defaultTargets = ["ClassificationSigmaValidity"]
+defaultTargets = ["ClassificationSigmaValidity", "SourcesOfUnknowability"]
 
 [leanOptions]
 autoImplicit = false
@@ -12,3 +12,6 @@ rev = "v4.22.0"
 
 [[lean_lib]]
 name = "ClassificationSigmaValidity"
+
+[[lean_lib]]
+name = "SourcesOfUnknowability"
