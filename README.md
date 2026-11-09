@@ -7,9 +7,9 @@ and a coverage map connecting the manuscript to Lean declarations.
 | Paper | Lean entry point | Coverage map | Publication status |
 | --- | --- | --- | --- |
 | [*Classification of sigma-validity in iterated announcements*](https://arxiv.org/abs/2607.04685) | [`ClassificationSigmaValidity.lean`](ClassificationSigmaValidity.lean) | [`ClassificationSigmaValidity/COVERAGE.md`](ClassificationSigmaValidity/COVERAGE.md) | arXiv preprint |
-| *Eventual and Strong Eventual Notions in Public Announcements* | [`EventualAndStrongEventualNotionsInPublicAnnouncements.lean`](EventualAndStrongEventualNotionsInPublicAnnouncements.lean) | [`EventualAndStrongEventualNotionsInPublicAnnouncements/COVERAGE.md`](EventualAndStrongEventualNotionsInPublicAnnouncements/COVERAGE.md) | arXiv submission planned |
-| *The Sources of Unknowability and Self-refutation in Epistemic and Dynamic Epistemic Logic* | [`SourcesOfUnknowability.lean`](SourcesOfUnknowability.lean) | [`SourcesOfUnknowability/COVERAGE.md`](SourcesOfUnknowability/COVERAGE.md) | Accepted at the 8th Asian Workshop for Philosophical Logic (AWPL 2026); not yet accepted for the proceedings. An arXiv posting is planned. |
-| [*Properties of Public Announcements as Operators: Commutativity, Monotonicity, Idempotence, Fixed points, and Stabilization*](https://github.com/eiyamada/Properties_of_PAL_and_BPAL_Operators) | [`PropertiesOfPALAndBPALOperators.lean`](PropertiesOfPALAndBPALOperators.lean) | [`PropertiesOfPALAndBPALOperators/COVERAGE.md`](PropertiesOfPALAndBPALOperators/COVERAGE.md) | Manuscript |
+| [*Eventual and Strong Eventual Notions in Public Announcements*](https://arxiv.org/abs/2609.24006) | [`EventualAndStrongEventualNotionsInPublicAnnouncements.lean`](EventualAndStrongEventualNotionsInPublicAnnouncements.lean) | [`EventualAndStrongEventualNotionsInPublicAnnouncements/COVERAGE.md`](EventualAndStrongEventualNotionsInPublicAnnouncements/COVERAGE.md) | arXiv preprint |
+| [*The Sources of Unknowability and Self-refutation in Epistemic and Dynamic Epistemic Logic*](https://arxiv.org/abs/2609.21317) | [`SourcesOfUnknowability.lean`](SourcesOfUnknowability.lean) | [`SourcesOfUnknowability/COVERAGE.md`](SourcesOfUnknowability/COVERAGE.md) | arXiv preprint; presented at the Asian Workshop on Philosophical Logic (AWPL 2026). |
+| *Properties of Public Announcements as Operators: Commutativity, Monotonicity, Idempotence, Fixed points, and Stabilization* | [`PropertiesOfPALAndBPALOperators.lean`](PropertiesOfPALAndBPALOperators.lean) | [`PropertiesOfPALAndBPALOperators/COVERAGE.md`](PropertiesOfPALAndBPALOperators/COVERAGE.md) | Manuscript |
 
 ## Build
 
@@ -61,7 +61,7 @@ The audit rejects axioms other than Lean's standard `propext`,
 `Classical.choice`, and `Quot.sound`.
 
 The announcement-operator development follows manuscript revision
-[`3cc2775`](https://github.com/eiyamada/Properties_of_PAL_and_BPAL_Operators/commit/3cc277515ae735f55c299d661a219452d7fff4b5),
+`3cc2775`,
 including its distinct PAL and BPAL orders. It proves the preservation
 characterization, ordinal rank comparisons and witnesses, finite and omega
 stabilization criteria, and extinction equivalences. Its audit is:
