@@ -1,6 +1,6 @@
 name = "leanPaperFormalizations"
 version = "0.1.0"
-defaultTargets = ["ClassificationSigmaValidity", "SourcesOfUnknowability", "EventualAndStrongEventualNotionsInPublicAnnouncements"]
+defaultTargets = ["ClassificationSigmaValidity", "SourcesOfUnknowability", "EventualAndStrongEventualNotionsInPublicAnnouncements", "PropertiesOfPALAndBPALOperators"]
 
 [leanOptions]
 autoImplicit = false
@@ -18,3 +18,6 @@ name = "SourcesOfUnknowability"
 
 [[lean_lib]]
 name = "EventualAndStrongEventualNotionsInPublicAnnouncements"
+
+[[lean_lib]]
+name = "PropertiesOfPALAndBPALOperators"
