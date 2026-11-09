@@ -9,7 +9,7 @@ and a coverage map connecting the manuscript to Lean declarations.
 | [*Classification of sigma-validity in iterated announcements*](https://arxiv.org/abs/2607.04685) | [`ClassificationSigmaValidity.lean`](ClassificationSigmaValidity.lean) | [`ClassificationSigmaValidity/COVERAGE.md`](ClassificationSigmaValidity/COVERAGE.md) | arXiv preprint |
 | [*Eventual and Strong Eventual Notions in Public Announcements*](https://arxiv.org/abs/2609.24006) | [`EventualAndStrongEventualNotionsInPublicAnnouncements.lean`](EventualAndStrongEventualNotionsInPublicAnnouncements.lean) | [`EventualAndStrongEventualNotionsInPublicAnnouncements/COVERAGE.md`](EventualAndStrongEventualNotionsInPublicAnnouncements/COVERAGE.md) | arXiv preprint |
 | [*The Sources of Unknowability and Self-refutation in Epistemic and Dynamic Epistemic Logic*](https://arxiv.org/abs/2609.21317) | [`SourcesOfUnknowability.lean`](SourcesOfUnknowability.lean) | [`SourcesOfUnknowability/COVERAGE.md`](SourcesOfUnknowability/COVERAGE.md) | arXiv preprint; presented at the Asian Workshop on Philosophical Logic (AWPL 2026). |
-| *Properties of Public Announcements as Operators: Commutativity, Monotonicity, Idempotence, Fixed points, and Stabilization* | [`PropertiesOfPALAndBPALOperators.lean`](PropertiesOfPALAndBPALOperators.lean) | [`PropertiesOfPALAndBPALOperators/COVERAGE.md`](PropertiesOfPALAndBPALOperators/COVERAGE.md) | Manuscript |
+| *Properties of Public Announcements as Operators: Commutativity, Monotonicity, Idempotence, Fixed points, and Stabilization* | [`PropertiesOfPublicAnnouncementsAsOperators.lean`](PropertiesOfPublicAnnouncementsAsOperators.lean) | [`PropertiesOfPublicAnnouncementsAsOperators/COVERAGE.md`](PropertiesOfPublicAnnouncementsAsOperators/COVERAGE.md) | Manuscript |
 
 ## Build
 
@@ -25,7 +25,7 @@ lake build
 `lake build ClassificationSigmaValidity`,
 `lake build SourcesOfUnknowability`,
 `lake build EventualAndStrongEventualNotionsInPublicAnnouncements`, or
-`lake build PropertiesOfPALAndBPALOperators`.
+`lake build PropertiesOfPublicAnnouncementsAsOperators`.
 
 On Windows, use a short checkout path if Lake or a dependency fails while
 creating files under `.lake` because of the path length.
@@ -67,5 +67,5 @@ characterization, ordinal rank comparisons and witnesses, finite and omega
 stabilization criteria, and extinction equivalences. Its audit is:
 
 ```text
-lake env lean scripts/PropertiesOfPALAndBPALOperatorsAxiomAudit.lean
+lake env lean scripts/PropertiesOfPublicAnnouncementsAsOperatorsAxiomAudit.lean
 ```
